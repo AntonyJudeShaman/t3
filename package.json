@@ -9,7 +9,7 @@
     "ng": "ng",
     "start": "SET NODE_OPTIONS=--openssl-legacy-provider && ng serve ",
     "config": "ts-node set-env.ts",
-    "build": "npm run config && ng build",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && npm run config && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
